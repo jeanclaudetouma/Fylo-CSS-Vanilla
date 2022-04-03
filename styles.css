@@ -1,0 +1,731 @@
+/* Global */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+:root {
+    /* Primary */
+    /* #070439 */
+    --verey-dark-blue: hsl(243, 87%, 12%);
+    /* #585989 */
+    --desaturated-blue: hsl(238, 22%, 44%);
+
+    /* Accent */
+    /* #3065f8 */
+    --bright-blue: hsl(224, 93%, 58%);
+    /* #3c9f8f */
+    --moderate-cyan: hsl(170, 45%, 43%);
+
+    /* Natural */
+    /* #f8f8fe */
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    /* #bfbfbf */
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+body {
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+input[typ="submit"],
+ul li a {
+    font-family: "Raleway", sans-serif;
+}
+
+.text-is-very-dark-blue {
+    color: var(--verey-dark-blue);
+}
+
+.text-is-light-grayish-blue {
+    color: var(--light-grayish-blue);
+}
+
+.text-is-desaturated-blue {
+    color: var(--desaturated-blue);
+}
+
+/* ************************** */
+
+.container {
+    max-width: 1440px;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+
+/* Navbar */
+
+.nav {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.nav__logo,
+.nav__menu {
+    display: inline-block;
+}
+
+.nav__logo {
+    float: left;
+    width: 10rem;
+    height: auto;
+    margin-right: auto;
+}
+
+.nav__menu {
+    float: right;
+    margin-top: 0.8rem;
+
+}
+
+.navMenuItem {
+    display: inline-block;
+    list-style: none;
+    margin-left: 2.2rem;
+}
+
+.navMenuItem a {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+
+.hero {
+    margin-bottom: 10rem;
+}
+
+.hero_copy,
+.hero__img {
+    width: 49%;
+    display: inline-block;
+}
+
+.hero_copy {
+    float: left;
+}
+
+.hero_copy__title {
+    margin: 4.2rem 0 1rem 0;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.hero_copy__text {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--desaturated-blue);
+    line-height: 1.6;
+}
+
+.inputEmailField {
+    display: inline-block;
+    width: 53%;
+    min-width: 14rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    padding-left: 1.5rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.inputSubmitButton {
+    display: inline-block;
+    width: 32%;
+    min-width: 7rem;
+    height: 2.5rem;
+    background-color: var(--bright-blue);
+    color: var(--light-grayish-blue);
+    font-family: "Raleway", sans-serif;
+    border-style: none;
+    border-radius: 0.2rem;
+    font-weight: 700;
+}
+
+.inputSubmitButton:hover,
+.inputSubmitButton1:hover {
+    background-color: #3065f8dc;
+}
+
+.hero__img {
+    float: right;
+}
+
+/* Background Curve Desktop */
+
+.bg-curve-desktop {
+    padding: 0;
+}
+
+.bg-curve-desktop__img {
+    width: 100%;
+    display: block;
+}
+
+
+/* How Section */
+
+.how {
+    background-color: #f8f8FE;
+    padding-bottom: 7rem;
+}
+
+.how_copy,
+.how_img {
+    display: inline-block;
+
+}
+
+.how_copy {
+    width: 55%;
+    float: left;
+}
+
+.how_img {
+    width: 42%;
+    margin-top: 3.5rem;
+    float: right;
+}
+
+.hero__img--mobile {
+    display: none;
+}
+
+.how_copy__heading {
+    margin: 2rem 0;
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.how_copy__text {
+    width: 34rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    word-spacing: 0.1rem;
+}
+
+.how_copy__link {
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    padding-bottom: 0.2rem;
+    font-size: 1rem;
+    color: var(--moderate-cyan);
+    text-decoration: none;
+    border-bottom: 1px solid #3c9f8f;
+}
+
+.how_copy__link_icon-arrow {
+    vertical-align: bottom;
+}
+
+.how_copy__link:hover {
+    color: #72DDC9;
+    border-bottom: 1px solid #72DDC9;
+}
+
+.how_copy__quote {
+    max-width: 23rem;
+    padding: 1.5rem 2.2rem;
+    background-color: white;
+    border-radius: 0.4rem;
+    box-shadow: 0px 0px 30px 3px #F2F2FE;
+}
+
+.how_copy__icon-quote {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.how_copy__quote__text {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    word-spacing: 0.2rem;
+}
+
+.how_copy__quote-CEO__img,
+.how_copy__quote-CEO__text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.how_copy__quote-CEO__img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.2rem;
+    border-radius: 50%;
+}
+
+
+.how_copy__quote-CEO__text1 {
+    font-size: 0.7rem;
+    word-spacing: 0.2rem;
+}
+
+.how_copy__quote-CEO__text2 {
+    font-size: 0.5rem;
+}
+
+
+/* Sign Up Section */
+
+.signUp {
+    background-color: var(--desaturated-blue);
+}
+
+.signUp_copy,
+.signUp_form {
+    display: inline-block;
+    width: 50%;
+    margin: 7rem 0;
+}
+
+.signUp_copy {
+    float: left;
+}
+
+.signUp_copy__heading {
+    font-size: 2.1rem;
+    color: var(--light-grayish-blue);
+    margin-bottom: 1.5rem;
+}
+
+.signUp_copy__text {
+    max-width: 36rem;
+    font-size: 1rem;
+    color: var(--light-grayish-blue);
+    padding-right: 5rem;
+}
+
+.signUp_form {
+    padding-left: 5rem;
+    float: right;
+}
+
+.inputEmailField1 {
+    display: block;
+    width: 95%;
+    min-width: 13rem;
+    height: 3.2rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    border-style: none;
+    border-radius: 0.2rem;
+    font-family: "Raleway", sans-serif;
+    box-shadow: 1px 2px 10px 1px #07043934;
+}
+
+.inputSubmitButton1 {
+    display: block;
+    width: 40%;
+    min-width: 11rem;
+    height: 3.2rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 0.2rem;
+    background-color: var(--bright-blue);
+    color: var(--light-grayish-blue);
+    box-shadow: 1px 2px 10px 1px #07043934;
+}
+
+/* Footer Section */
+
+.footer {
+    background-color: var(--verey-dark-blue);
+}
+
+.footer__logo {
+    display: block;
+    padding: 6rem 0 1.2rem;
+}
+
+.footer__list-items {
+    display: block;
+    padding-bottom: 3rem;
+}
+
+.footer__contactList,
+.footer__aboutUs,
+.footer__contactUs,
+.footer__socialMedia {
+    width: 24.5%;
+    float: left;
+}
+
+.footer__contactList li,
+.footer__aboutUs li,
+.footer__contactUs li,
+.footer__socialMedia li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.footer__aboutUs li {
+    margin-left: 5rem;
+}
+
+.footer__contactUs li {
+    margin-left: 3rem;
+}
+
+.footer__socialMedia li {
+    margin-left: 0.5rem;
+}
+
+.footerListIcons {
+    margin-right: 1rem;
+}
+
+.footer__aboutUs li a,
+.footer__contactUs li a {
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer__socialMedia li {
+    display: inline-block;
+}
+
+.socialMediaIcons {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* Media Queries */
+
+/* Laptop Viewport */
+@media screen and (max-width:1024px) {
+    .hero_copy__title {
+        margin-top: 2rem;
+    }
+
+    .hero__img {
+        margin-top: 3rem;
+    }
+
+    .how_copy__text {
+        width: 29rem;
+    }
+}
+
+/* Tablet Viewport */
+@media screen and (max-width:768px) {
+
+    /* Navbar Tabelt Viewport */
+
+    .nav {
+        margin-bottom: 10rem;
+    }
+
+    /* Hero Section Tabelt Viewport */
+    .hero__img--desktop {
+        display: none;
+    }
+
+    .hero__img--mobile,
+    .hero_copy {
+        display: block;
+        width: 100%;
+    }
+
+    .hero__img--mobile {
+        margin-bottom: 5rem;
+    }
+
+    .hero_copy {
+        text-align: center;
+    }
+
+    .hero_copy__title {
+        font-size: 3.2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .hero_copy__text {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .inputEmailField,
+    .inputSubmitButton {
+        display: block;
+        width: 92%;
+        height: 5rem;
+        border-radius: 0.5rem;
+        font-size: 1.8rem;
+    }
+
+    .inputEmailField {
+        margin: 0 auto 1.5rem;
+        padding: 2rem;
+    }
+
+    .inputSubmitButton {
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    /* How Section Tabelt Viewport */
+
+    .how {
+        padding-bottom: 3rem;
+    }
+
+    .how_copy,
+    .how_copy__heading,
+    .how_copy__text {
+        display: block;
+        width: 100%;
+    }
+
+    .how_copy__heading {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .how_copy__text {
+        font-size: 1.8rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .how_copy__link {
+        display: block;
+        width: 14.5rem;
+        margin: 0 auto;
+        padding-bottom: 0.7rem;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .how_copy__link_icon-arrow {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 0.5rem;
+        vertical-align: middle;
+    }
+
+    .how_copy__quote {
+        margin: 3rem auto 1rem;
+    }
+
+    .how_copy__icon-quote {
+        width: 1.1rem;
+        height: 1.2rem;
+    }
+
+    .how_copy__quote__text {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    .how_copy__quote-CEO__text1 {
+        font-size: 0.8rem;
+    }
+
+    .how_copy__quote-CEO__text2 {
+        font-size: 0.6rem;
+    }
+
+    .signUp_form {
+        margin-top: 11rem;
+    }
+}
+
+/* Mobile Viewport */
+
+@media screen and (max-width:425px) {
+
+    .container {
+        padding: 0 0.5rem;
+    }
+
+    /* Navbar Mobile Viewport */
+
+    .nav {
+        margin-bottom: 4rem;
+    }
+
+    .nav__logo {
+        width: 8rem;
+    }
+
+    .nav__menu {
+        margin-top: 0.3rem;
+    }
+
+    .navMenuItem a {
+        font-size: 1rem;
+    }
+
+    .navMenuItem {
+        margin-left: 1.5rem;
+    }
+
+    /* Hero Section Mobile Viewport */
+
+    .hero {
+        margin-bottom: 8rem;
+    }
+
+    .hero__img--mobile {
+        margin-bottom: 4rem;
+    }
+
+    .hero_copy__title {
+        font-size: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .hero_copy__text {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+    }
+
+    .inputEmailField,
+    .inputSubmitButton {
+        height: 4rem;
+        font-size: 1.6rem;
+    }
+
+    .inputEmailField {
+        margin: 0 auto 1.5rem;
+        padding: 2rem;
+    }
+
+    .inputSubmitButton {
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    /* How Section Mobile Viewport */
+
+    .how_copy__text {
+        font-size: 1.6rem;
+        margin-bottom: 2.8rem;
+    }
+
+    .how_copy__quote {
+        margin-bottom: 4rem;
+    }
+
+
+    /* SignUp Section */
+
+    .signUp {
+        padding: 2rem;
+    }
+
+    .signUp_copy,
+    .signUp_form {
+        display: block;
+        width: 100%;
+        margin: 0;
+        float: none;
+        text-align: center;
+    }
+
+    .signUp_copy__text {
+        margin: 1.8rem 0 3rem;
+    }
+
+    .signUp_form,
+    .signUp_copy__text {
+        padding: 0;
+    }
+
+    .inputEmailField1,
+    .inputSubmitButton1 {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+
+    /* Footer Section Mobile Viewport */
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer__logo {
+        margin: auto;
+        padding: 5rem 0 2.2rem;
+    }
+
+    .footer__contactList,
+    .footer__aboutUs,
+    .footer__contactUs,
+    .footer__socialMedia {
+        width: 100%;
+        float: none;
+        margin-bottom: 2.2rem;
+    }
+
+    .footer__contactList li,
+    .footer__aboutUs li,
+    .footer__contactUs li,
+    .footer__socialMedia li {
+        margin: 0 0 1rem;
+    }
+
+    .socialMediaIcons {
+        margin: 0 0.2rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    /* Nav Section */
+
+    .nav {
+        margin-top: 1rem;
+    }
+
+    .nav__logo {
+        width: 6rem;
+    }
+
+    .nav__menu {
+        margin-top: 0.1rem;
+    }
+
+    .navMenuItem a {
+        font-size: 0.8rem;
+    }
+
+    .navMenuItem {
+        margin-left: 1.5rem;
+    }
+
+    /* How Section */
+
+    .how_copy__text {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+}

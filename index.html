@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <nav class="nav container clearfix">
+    <img class="nav__logo" src="images/logo.svg" alt="">
+    <ul class="nav__menu">
+      <li class="navMenuItem"><a href="#">Features</a></li>
+      <li class="navMenuItem"><a href="#">Team</a></li>
+      <li class="navMenuItem"><a href="#">Sign In</a></li>
+    </ul>
+  </nav>
+  <section class="hero container clearfix">
+    <img class="hero__img hero__img--mobile" src="images/illustration-1.svg" alt="">
+    <div class="hero_copy">
+      <h1 class="hero_copy__title text-is-very-dark-blue">All your files in one secure location, accessible anywhere.
+      </h1>
+      <p class="hero_copy__text"> Fylo stores your most important files in one secure location.
+        Access them wherever you need, share and collaborate with friends,
+        family, and co-workers.</p>
+      <form action="mailto:claudetouma96@gmail.com">
+        <input class="inputEmailField" type="email" placeholder="Enter your email...">
+        <input class="inputSubmitButton" type="submit" value="Get Started">
+      </form>
+    </div>
+    <img class="hero__img hero__img--desktop" src="images/illustration-1.svg" alt="">
+  </section>
+  <div class="bg-curve-desktop container">
+    <img class="bg-curve-desktop__img" src="images/bg-curve-desktop.svg" alt="">
+  </div>
+  <section class="how container clearfix">
+    <img class="how_img hero__img--mobile" src="images/illustration-2.svg" alt="">
+    <div class="how_copy">
+      <h2 class="how_copy__heading text-is-very-dark-blue">Stay productive, wherever you are</h2>
+      <p class="how_copy__text text-is-very-dark-blue">
+        Never let location be an issue when accessing your files. Fylo has you
+        covered for all of your file storage needs.
+      </p>
+      <p class="how_copy__text">
+        Securely share files and folders with friends, family and colleagues for
+        live collaboration. No email attachments required!
+      </p>
+      <div class="how_copy__link-item">
+        <a class="how_copy__link" href="#">See how Fylo works <img class="how_copy__link_icon-arrow"
+            src="images/icon-arrow.svg" alt=""></a>
+      </div>
+      <blockquote class="how_copy__quote">
+        <img class="how_copy__icon-quote" src="images/icon-quotes.svg" alt="">
+        <p class="how_copy__quote__text is-very-dark-blue">Fylo has improved our team productivity by an order of
+          magnitude. Since
+          making the switch our team has become a well-oiled collaboration machine.
+        </p>
+        <div class="how_copy__quote-CEO">
+          <img class="how_copy__quote-CEO__img" src="images/avatar-testimonial.jpg" alt="">
+          <div class="how_copy__quote-CEO__text">
+            <h3 class="how_copy__quote-CEO__text1 is-very-dark-blue">Kyle Burton</h3>
+            <p class="how_copy__quote-CEO__text2 is-very-dark-blue">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </blockquote>
+    </div>
+    <img class="how_img hero__img--desktop" src="images/illustration-2.svg" alt="">
+  </section>
+  <section class="signUp container clearfix">
+    <div class="signUp_copy">
+      <h2 class="signUp_copy__heading">Get early access today</h2>
+      <p class="signUp_copy__text"> It only takes a minute to sign up and our free starter tier is extremely generous.
+        If you have any questions, our support team would be happy to help you.</p>
+    </div>
+    <form action="mailto:claudetouma96@gmail.com" class="signUp_form">
+      <input class="inputEmailField1" type="email" name="email" placeholder="email@example.com">
+      <input class="inputSubmitButton1" type="submit" value="Get Started For Free">
+    </form>
+  </section>
+  <footer class="footer container">
+    <img class="footer__logo" src="images/logo white.svg" alt="">
+    <div class="footer__list-items clearfix">
+      <ul class="footer__contactList">
+        <li class="text-is-light-grayish-blue"><img class="footerListIcons" src="images/icon-phone.svg" alt="">Phone:
+          +1-543-123-4567</li>
+        <li class="text-is-light-grayish-blue">
+          <img class="footerListIcons" src="images/icon-email.svg" alt="">example@fylo.com
+        </li>
+      </ul>
+      <ul class="footer__aboutUs clearfix">
+        <li><a class="text-is-light-grayish-blue" href="#">About Us</a></li>
+        <li><a class="text-is-light-grayish-blue" href="#">Jobs</a></li>
+        <li><a class="text-is-light-grayish-blue" href="#">Press</a></li>
+        <li><a class="text-is-light-grayish-blue" href="#">Blog</a></li>
+      </ul>
+      <ul class="footer__contactUs clearfix">
+        <li><a class="text-is-light-grayish-blue" href="#">Contact Us</a></li>
+        <li><a class="text-is-light-grayish-blue" href="#">Terms</a></li>
+        <li><a class="text-is-light-grayish-blue" href="#">Privacy</a> </li>
+      </ul>
+      <ul class="footer__socialMedia clearfix">
+        <li><img class="socialMediaIcons" src="icons/facebook.png" alt=""></li>
+        <li><img class="socialMediaIcons" src="icons/twitter.png" alt=""></li>
+        <li><img class="socialMediaIcons" src="icons/instagram.png" alt=""></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
